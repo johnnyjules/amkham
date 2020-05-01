@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Oswald:wght@300&family=Vollkorn&display=swap');
+
+/*--------------------------------------------------
+ALL
+--------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*--------------------------------------------------
+H, P
+--------------------------------------------------*/
+
+h1 {
+    
+    font-family: 'Oswald', sans-serif;
+
+    font-size: 105px;
+    color: lavender;
+
+    text-shadow: 1px 1px 1px black,
+    2px 2px 1px #3294BB;
+}
+
+h2 {
+    
+    font-family: 'Oswald', sans-serif;
+
+    font-size:60px;
+    color: lavender;
+
+    text-shadow: 1px 1px 1px black,
+    2px 2px 1px #3294BB;
+}
+
+h3 {
+    
+    font-family: 'Oswald', sans-serif;
+
+    font-size: 20px;
+    color: lavender;
+
+    text-shadow: 1px 1px 1px black,
+    2px 2px 1px #3294BB;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+
+    font-size: 25px;
+    color: lavender;
+
+    text-shadow: 1px 1px 1px black,
+    2px 2px 1px #3294BB;
+
+}
+
+/*--------------------------------------------------
+IMG
+--------------------------------------------------*/
+
+.cover {
+    width: 250px;
+    height: auto;
+    border: #8F5D7A double 10px;
+}
+
+/*--------------------------------------------------
+BODY, HTML
+--------------------------------------------------*/
+
+body html {
+    height: 100%;
+}
+
+/*--------------------------------------------------
+WRAPPER 
+--------------------------------------------------*/
+
+.wrapper {
+    width: 100vw;
+    height: 100%;
+
+    background: linear-gradient(to top right, #2F8DB3,#E83044);
+    background-color: lightcoral;
+/* 
+    transition: all ease-in-out 1s; */
+
+}
+
+/*--------------------------------------------------
+GRID CONTAINER
+--------------------------------------------------*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr auto auto auto 2fr;
+    grid-template-rows: 0.1fr auto auto auto auto auto auto 1fr;
+    gap: 15px 15px;
+    grid-template-areas: 
+    ". . . . ." 
+    ". a a a ." /* AAA */
+    ". a a a ." /* BBB */
+    ". b b b ." /* BBB */
+    ". b b b ." /* BBB */
+    ". c c c ." /* CCC */
+    ". c c c ." /* CCC */
+    ". d d d ." /* DDD */
+    ". . . . .";
+  }
+
+  .cell {
+    border: 1px solid;
+    margin: 5px
+  }
+
+.a { 
+    height: 600px;
+    width: 800px;
+
+    background-image: url(./andy.jpg);
+    background-position-x: 10vw;
+    background-position-y: -3vw;
+    border: #3596C0 double 21px;
+    border-radius: 1px;
+    box-shadow: 10px -10px 11px -5px rgba(0,0,0,0.43);
+
+    transition: all ease-in-out 1s;
+
+    font-size: 22px;line-height: 1;letter-spacing: 0.421em;font-weight: 400;
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+    grid-area: a; 
+}
+
+p {
+    text-align: end;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+h2 {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+  
+  
+
+.b {
+    height: auto;
+    width: 840px;
+
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    background-color: #3294BB;
+    border: #E83044;
+    border-radius: 1px;
+    box-shadow: 10px -10px 11px -5px rgba(0,0,0,0.43);
+
+    transition: all ease-in-out 1s;
+
+    font-size: 22px;line-height: 1;letter-spacing: 0.421em;font-weight: 400;
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    grid-area: b; 
+}
+  
+.c {
+    height: auto;
+    width: 840px;
+
+   background-color:  #E83044;
+    border-radius: 1px;
+    box-shadow: 10px -10px 11px -5px rgba(0,0,0,0.43);
+
+    transition: all ease-in-out 1s;
+
+    font-size: 22px;line-height: 1;letter-spacing: 0.421em;font-weight: 400;
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    grid-area: c; 
+}
+
+.c h2 {
+    font-size: 90px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px black,
+             2px 2px 1px #3294BB;
+}
+
+.c p{
+    font-size: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px black,
+             2px 2px 1px #3294BB;
+}
+  
+.d {
+    height: auto;
+    width: 840px;
+
+    background-image: url(./andy.jpg);
+    background-position-x: 10vw;
+    background-position-y: 20vw;
+    box-shadow: 10px -10px 11px -5px rgba(0,0,0,0.43);
+
+    transition: all ease-in-out 1s;
+
+    font-size: 22px;line-height: 1;letter-spacing: 0.421em;font-weight: 400;
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    grid-area: d; 
+}
+  
