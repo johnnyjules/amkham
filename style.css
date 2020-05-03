@@ -62,9 +62,8 @@ IMG
 --------------------------------------------------*/
 
 .cover {
-    width: 250px;
+    width: auto;
     height: auto;
-    border: #8F5D7A double 10px;
 }
 
 /*--------------------------------------------------
@@ -97,103 +96,121 @@ GRID CONTAINER
 .grid-container {
     display: grid;
     grid-template-columns: 2fr auto auto auto 2fr;
-    grid-template-rows: 0.1fr auto auto auto auto auto auto 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto 1fr;
     gap: 15px 15px;
     grid-template-areas: 
     ". . . . ." 
     ". a a a ." /* AAA */
     ". a a a ." /* BBB */
-    ". b b b ." /* BBB */
-    ". b b b ." /* BBB */
-    ". c c c ." /* CCC */
-    ". c c c ." /* CCC */
     ". d d d ." /* DDD */
-    ". . . . .";
+    ". b b b ." /* BBB */
+    ". b b b ." /* BBB */
+    ". c c c ." /* CCC */
+    ". c c c ." /* CCC */
+    ". . . . ."; /* DDD */
   }
 
-  .cell {
-    border: 1px solid;
-    margin: 5px
-  }
-
-.a { 
-    height: 600px;
-    width: 800px;
-
-    background-image: url(./andy.jpg);
-    background-position-x: 10vw;
-    background-position-y: -3vw;
-    border: #3596C0 double 21px;
-    border-radius: 1px;
-    box-shadow: 10px -10px 11px -5px rgba(0,0,0,0.43);
-
-    transition: all ease-in-out 1s;
-
-    font-size: 22px;line-height: 1;letter-spacing: 0.421em;font-weight: 400;
-    
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    
-    grid-area: a; 
-}
-
-p {
-    text-align: end;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-}
-
-h1 {
-    padding-top: 10px;
-    padding-left: 10px;
-}
-
-h2 {
-    padding-top: 10px;
-    padding-left: 10px;
-}
   
-  
-
-.b {
-    height: auto;
-    width: 840px;
-
-    display: flex; 
-    flex-wrap: wrap;
-    flex-direction: row;
-
-    background-color: #3294BB;
-    border: #E83044;
-    border-radius: 1px;
-    box-shadow: 10px -10px 11px -5px rgba(0,0,0,0.43);
-
-    transition: all ease-in-out 1s;
-
-    font-size: 22px;line-height: 1;letter-spacing: 0.421em;font-weight: 400;
+  .a { 
+      height: 600px;
+      width: 800px;
+      
+      background-image: url(./andy.jpg);
+      background-position-x: 10vw;
+      background-position-y: -3vw;
+      border: #3596C0 double 21px;
+      border-radius: 1px;
+      box-shadow: 10px -10px 11px -5px rgba(0,0,0,0.43);
+      
+      /* transition: all ease-in-out 1s; */
+      
+      font-size: 22px;line-height: 1;letter-spacing: 0.421em;font-weight: 400;
+      
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
+      
+      grid-area: a; 
+    }
     
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-
-    grid-area: b; 
-}
-  
-.c {
-    height: auto;
-    width: 840px;
-
-   background-color:  #E83044;
-    border-radius: 1px;
-    box-shadow: 10px -10px 11px -5px rgba(0,0,0,0.43);
-
-    transition: all ease-in-out 1s;
-
-    font-size: 22px;line-height: 1;letter-spacing: 0.421em;font-weight: 400;
+    p {
+        text-align: end;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
     
-    /* display: flex;
+    h1 {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    
+    h2 {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    
+    
+    
+    .b {
+        height: auto;
+        width: 840px;
+        
+        background-color: #3294BB;
+        border: #E83044;
+        border-radius: 1px;
+        box-shadow: 10px -10px 11px -5px rgba(0,0,0,0.43);
+        box-shadow: inset 0 0 90px #000000;
+        
+        /* transition: all ease-in-out 1s; */
+        
+        font-size: 22px;line-height: 1;letter-spacing: 0.421em;font-weight: 400;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* align-items: center; */
+        height: auto;
+        
+        grid-area: b; 
+    }
+    
+    .cell {
+        height: auto;
+        width: auto;
+    }
+
+    .cell h3 {
+        font-size: 35px;
+        text-align: justify;
+        padding: 5px;
+    }
+
+    .cell p {
+        font-size: 21px;
+        text-align: justify;
+    }
+
+    .cell img {
+        height: auto;
+        width: 150px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .c {
+        height: auto;
+        width: 840px;
+        
+        background-color:  #E83044;
+        border-radius: 1px;
+        box-shadow: 10px -10px 11px -5px rgba(0,0,0,0.43);
+        
+        transition: all ease-in-out 1s;
+        
+        font-size: 22px;line-height: 1;letter-spacing: 0.421em;font-weight: 400;
+        
+        /* display: flex;
     align-items: center;
     justify-content: center; */
 
@@ -217,24 +234,46 @@ h2 {
     text-shadow: 1px 1px 1px black,
              2px 2px 1px #3294BB;
 }
-  
+
+/* CONTACTS */
 .d {
     height: auto;
     width: 840px;
 
-    background-image: url(./andy.jpg);
-    background-position-x: 10vw;
-    background-position-y: 20vw;
+    background-color: #3294BB;    
+    /* border: 5px solid #3294BB; */
     box-shadow: 10px -10px 11px -5px rgba(0,0,0,0.43);
+    box-shadow: inset 0 0 90px #000000;
 
-    transition: all ease-in-out 1s;
+    /* transition: all ease-in-out 1s; */
 
     font-size: 22px;line-height: 1;letter-spacing: 0.421em;font-weight: 400;
     
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: right;
 
     grid-area: d; 
 }
-  
+
+.d h2 {
+    font-size: 23px;
+}
+
+.icon {
+    width: 140px;
+    height: auto;
+
+    padding-left: 5rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    fill: white;
+}
+
+.secondstripe {
+    width: 550px;
+    height: auto;
+    /* transform: rotate(90deg); */
+}
